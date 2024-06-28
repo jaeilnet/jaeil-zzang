@@ -2,9 +2,9 @@ import React from "react";
 
 import {ComponentPropsWithRef} from "react";
 
-export interface ButtonProps extends ComponentPropsWithRef<"button"> {
+export interface ButtonPropss extends ComponentPropsWithRef<"button"> {
     label: string;
 }
-export const Button = ({label, ...props}: ButtonProps) => {
+export const ButtonTwo = ({label, ...props}: ButtonPropss) => {
     return <button {...props}>{label}</button>;
 };
