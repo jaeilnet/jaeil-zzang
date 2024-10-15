@@ -11,7 +11,7 @@
         "head:dev": "pnpm head run dev",
         "head:build": "pnpm head:test && pnpm head build",
         "head:build:sb": "pnpm head build:sb",
-        "head:publish:beta": "pnpm head patch:beta && pnpm head publish"
+        "head:publish": "pnpm head publish"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.6",
