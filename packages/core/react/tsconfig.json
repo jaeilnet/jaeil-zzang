@@ -1,7 +1,0 @@
-// packages/components/button
-
-{
-    "compilerOptions": {},
-    "extends": ["../../../tsconfig.json"],
-    "include": ["src", "index.ts"]
-}

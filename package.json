@@ -1,12 +1,17 @@
 {
-    "name": "jaeil-zzang",
+    "name": "@jaeilzzang/ui",
     "version": "0.0.0",
     "license": "MIT",
+    "description": "jaeilzzang ui",
     "scripts": {
-        "dev": "pnpm run -F docs dev",
-        "sb": "pnpm run -F @jaeil-zzang/storybook dev",
-        "build:sb": "pnpm run -F @jaeil-zzang/storybook build:sb",
-        "test": "vitest"
+        "docs": "pnpm run -F docs",
+        "docs:dev": "pnpm docs dev",
+        "head": "pnpm -F @jaeilzzang/headless-ui",
+        "head:test": "pnpm head run test",
+        "head:dev": "pnpm head run dev",
+        "head:build": "pnpm head:test && pnpm head build",
+        "head:build:sb": "pnpm head build:sb",
+        "head:publish:beta": "pnpm head patch:beta && pnpm head publish"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.6",
@@ -31,5 +36,11 @@
     "engines": {
         "node": ">=16.x",
         "pnpm": ">=8.x"
-    }
+    },
+    "dependencies": {
+        "eslint-plugin-react-refresh": "^0.4.7",
+        "eslint-scope": "^7.2.2",
+        "eslint-visitor-keys": "^3.4.3"
+    },
+    "author": "jaielzzang"
 }
